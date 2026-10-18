@@ -248,6 +248,8 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
 .plan .tg{display:flex;gap:10px;align-items:center;border-top:1px dashed currentColor;padding-top:10px;margin-top:4px}
 .plan .tg b{font-size:22px;font-weight:800;letter-spacing:-.04em}
 .plan .tg span{font-size:11.5px;font-weight:600;line-height:1.25;opacity:.85}
+  .plan .plink{align-self:flex-start;display:inline-flex;align-items:center;gap:6px;margin-top:6px;padding:8px 14px;border-radius:999px;background:#ffffff;color:#003a8d;font-size:12.5px;font-weight:800;text-decoration:none;border:1px solid #cce7f6}
+.plan .plink:hover{background:#003a8d;color:#ffffff}
 
 /* thanks */
 #s13{background:var(--navy);color:var(--white)}
@@ -304,8 +306,7 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
       <div class="eb"><span class="no">18 OCT 2026</span><span class="lab">Probation report · June – October 2026</span></div>
       <h1>HRIS<br><span>Executive</span><i>.</i></h1>
       <div class="who"><span>Wafiyyah Mukminah</span><span class="dot"></span><span style="color:var(--soft)">Bagi Kopi · Ciumbuleuit, Bandung</span></div>
-      <p class="lede" style="margin-top:12px">Five months of keeping people data complete, accurate and moving, from new-hire input to attendance monitoring and the Attura rollout.</p>
-      <p class="hint">Navigate with <kbd>↓</kbd><kbd>→</kbd> or scroll · <kbd>F</kbd> full screen</p>
+      <p class="lede" style="margin-top:12px">Four months and half of keeping people data complete, accurate and moving, from new-hire input to attendance monitoring and the Attura rollout.</p>
     </div>
     <article class="c rec rise" aria-label="Employee record">
       <div class="rec-top"><span class="lab">Employee record</span><span class="lab">HRIS · 2026</span></div>
@@ -331,7 +332,7 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
 <!-- 2 SCOPE -->
 <section class="slide" id="s2" data-title="Scope of Work">
   <div class="wrap">
-    <div class="shead"><div><div class="eb"><span class="no">02</span><span class="lab">Scope of work</span></div><h2 class="h2">Four things I own as <em>HRIS Executive</em></h2><p class="lede">Each responsibility with its headline numbers. Click a card to jump to the details.</p></div></div>
+    <div class="shead"><div><div class="eb"><span class="no">02</span><span class="lab">Scope of work</span></div><h2 class="h2">Four things I own as <em>HRIS Executive</em></h2></div></div>
     <div class="bento">
       <button class="c sc s3 rise" data-go="s3"><div class="band" style="background:var(--blue)"></div><span class="ic" style="background:var(--sky);color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0"/><path d="M17 11l2 2 3.5-4"/></svg></span><h3>Employee Data</h3><p>Input and update data for new, active, promoted, transferred, demoted, resigned and inactive employees.</p><div class="kv"><div><b>157</b><span>new hires</span></div><div><b>74</b><span>status changes</span></div><div><b>9</b><span>import batches</span></div></div><span class="go">See results →</span></button>
       <button class="c sc s3 rise" data-go="s5"><div class="band" style="background:var(--orange)"></div><span class="ic" style="background:var(--peach);color:var(--orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span><h3>Database Accuracy</h3><p>Keep data complete and accurate, fix discrepancies, and coordinate with related parties.</p><div class="kv"><div><b>4×</b><span>full checks</span></div><div><b>94%</b><span>complete</span></div><div><b>4/9</b><span>payroll batches</span></div></div><span class="go">See results →</span></button>
@@ -360,7 +361,6 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
     </div>
     <div class="bento">
       <div class="c s7 r2 rise">
-        <div class="ch"><div><h3>Headcount by outlet</h3><p class="sub">Bubble size = employees · tap an area to zoom · click a pin for Google Maps</p></div><div class="chips" id="areaChips"></div></div>
         <div class="mapbox"><svg id="map" role="img" aria-label="Map of Java with Bagi Kopi outlets sized by headcount"></svg></div>
         <div class="bento" style="margin-top:12px;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px" id="areaTiles"></div>
         <div style="margin-top:12px"><p class="lab" style="margin-bottom:6px">Largest store teams</p><div class="rows" id="bigOutlets" style="--lw:110px"></div></div>
@@ -437,7 +437,7 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
     </div>
     <div class="bento">
       <div class="c s7 rise">
-        <div class="ch"><div><h3>Anomalies per month by type</h3><p class="sub">Hover a block for its count</p></div><div class="leg" id="anomLeg"></div></div>
+        <div class="ch"><div><h3>Anomalies per month by type</h3></div><div class="leg" id="anomLeg"></div></div>
         <svg class="ch-svg" id="anom" viewBox="0 0 640 250" role="img" aria-label="Attendance anomalies per month by type"></svg>
       </div>
       <div class="c s5 rise">
@@ -473,7 +473,7 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
       <div class="c navy s3 rise" style="display:flex;flex-direction:column;justify-content:center"><h3>Requests resolved</h3><p class="sub">Approved, rejected or cancelled</p><div class="ring" id="ring98"></div></div>
       <div class="c s3 rise"><div class="ch"><div><h3>Request status</h3><p class="sub">1,697 requests</p></div></div><div class="rows" id="status"></div></div>
       <div class="c s6 rise">
-        <div class="ch"><div><h3>Requests by district</h3><p class="sub">Per month · hover a block</p></div><div class="leg" id="raLeg"></div></div>
+        <div class="ch"><div><h3>Requests by district</h3><p class="sub">Per month</p></div><div class="leg" id="raLeg"></div></div>
         <svg class="ch-svg" id="reqArea" viewBox="0 0 560 200" role="img" aria-label="Requests by district per month"></svg>
       </div>
       <div class="c s6 rise">
@@ -553,7 +553,7 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
 <!-- 11 CHALLENGES -->
 <section class="slide" id="s11" data-title="Challenges">
   <div class="wrap">
-    <div class="shead"><div><div class="eb"><span class="no">11</span><span class="lab">Challenges</span></div><h2 class="h2">Four problems, <em>four fixes</em></h2><p class="lede">Key challenges during probation, each with the data behind it. Flip a card to see the solution.</p></div><button class="ibtn" id="flipAll" type="button">Show all solutions</button></div>
+    <div class="shead"><div><div class="eb"><span class="no">11</span><span class="lab">Challenges</span></div><h2 class="h2">Four problems, <em>four fixes</em></h2><p class="lede">Key challenges during probation.</p></div><button class="ibtn" id="flipAll" type="button">Show all solutions</button></div>
     <div class="bento" id="chal"></div>
   </div>
 </section>
@@ -563,8 +563,8 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
   <div class="wrap">
     <div class="shead"><div><div class="eb"><span class="no">12</span><span class="lab">For the next period</span></div><h2 class="h2">Next <em>Plan</em></h2><p class="lede">Improvements I plan to deliver next, building on the challenges and lessons from probation.</p></div></div>
     <div class="bento">
-      <div class="c blue plan s3 rise"><span class="ic" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Hiring Website</h3><p>Move hiring from forms to a careers page on the Bagi Kopi domain, so candidates apply in one place.</p><div class="tg"><b>157</b><span>hires in 5 months to run through one page</span></div></div>
-      <div class="c peach plan s3 rise"><span class="ic" style="color:var(--orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 13v-3M12 13V8M16 13v-5M9 21h6"/></svg></span><h3>Better Recap Decks</h3><p>Redesign recap presentations with one template, clear charts and key highlights.</p><div class="tg" style="color:var(--brown)"><b>34</b><span>store scorecards per month in one format</span></div></div>
+      <div class="c blue plan s3 rise"><span class="ic" style="color:var(--blue)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></span><h3>Hiring Website</h3><p>Move hiring from forms to a careers page on the Bagi Kopi domain, so candidates apply in one place.</p><div class="tg"><b>157</b><span>hires in 5 months to run through one page</span></div></div><a class="plink" href="https://bagikopi-ats.vercel.app/lowongan" target="_blank" rel="noopener">Lihat prototype ↗</a>
+      <div class="c peach plan s3 rise"><span class="ic" style="color:var(--orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 13v-3M12 13V8M16 13v-5M9 21h6"/></svg></span><h3>Better Recap Decks</h3><p>Redesign recap presentations with one template, clear charts and key highlights.</p><div class="tg" style="color:var(--brown)"><b>34</b><span>store scorecards per month in one format</span></div></div><a class="plink" href="https://docs.google.com/presentation/d/11hEKw2F2UWXjEiSSVmJshkkUrZtdPiTcLPwjMyQnzCE/edit?slide=id.p2#slide=id.p2" target="_blank" rel="noopener">Lihat contoh deck ↗</a>
       <div class="c navy plan s3 rise"><span class="ic" style="color:var(--navy)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M7 3h7l5 5v13H7z"/><path d="M14 3v5h5M10 13h6M10 17h4"/></svg></span><h3>Attendance SOP</h3><p>Roll out a clear SOP for clock in/out, reporting and deadlines to every store.</p><div class="tg"><b>1,382</b><span>avg anomalies a month to bring down</span></div></div>
       <div class="c orange plan s3 rise"><span class="ic" style="color:var(--orange)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12a9 9 0 1 1-3-6.7"/><path d="M21 4v5h-5"/></svg></span><h3>Full Attura Rollout</h3><p>Reach 100% activation and keep Attura data in sync with the master database.</p><div class="tg"><b>25 + 92</b><span>accounts to activate · records to fix</span></div></div>
       <div class="c s12 rise">
@@ -578,7 +578,7 @@ kbd{font-family:var(--m);font-size:11px;border:1px solid var(--sky);border-botto
 <!-- 13 THANKS -->
 <section class="slide" id="s13" data-title="Thank You">
   <div class="wrap thanks">
-    <div><p class="lab" style="color:var(--sky);margin-bottom:14px">Probation report · HRIS Executive</p><h2>Thank<br>you<span>.</span></h2><p style="margin-top:18px;color:var(--sky)">Questions, feedback and next steps welcome.</p></div>
+    <div><p class="lab" style="color:var(--sky);margin-bottom:14px">Probation report · HRIS Executive</p><h2>Thank<br>you<span>.</span></h2></div>
     <dl class="tg2">
       <div><dt>Name</dt><dd>Wafiyyah Mukminah</dd></div>
       <div><dt>Position</dt><dd>HRIS Executive</dd></div>
